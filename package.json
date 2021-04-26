@@ -14,7 +14,8 @@
     "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
     "mochaMerge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "deleteMochaReport": "rm -r mochawesome-report || true",
-    "cypress-qa":"npx cypress open --env configFile=staging"
+    "cypress-qa":"npx cypress open --env configFile=staging",
+    "runBrowser":"npx cypress run --browser edge && npx cypress run --browser chrome && npx cypress run --browser firefox"
   },
   "author": "",
   "license": "ISC",
