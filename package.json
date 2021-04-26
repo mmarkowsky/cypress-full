@@ -1,0 +1,30 @@
+{
+  "name": "test_cypress_full",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "headless": "npx cypress run",
+    "cypress": "npx cypress open",
+    "dashboard": "npx cypress run --record --key 1788f9fe-8f7c-4c54-ad91-63d72fae7fea",
+    "delete_reports": "rm cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "junitReport": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
+    "deletejunitReport": "rm -rf cypress/results/junit/results*.xml",
+    "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "mochaMerge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "deleteMochaReport": "rm -r mochawesome-report || true",
+    "cypress-qa":"npx cypress open --env configFile=staging"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.1.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

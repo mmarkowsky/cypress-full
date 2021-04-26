@@ -1,0 +1,8 @@
+{
+    "chromeWebSecurity": false,
+    "env": {
+      "baseUrlUniversity": "http://staging.webdriveruniversity.com/"
+    },
+    "projectId": "jrub9e"
+  }
+  

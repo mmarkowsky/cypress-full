@@ -1,0 +1,8 @@
+{
+    "chromeWebSecurity": false,
+    "env": {
+      "baseUrlUniversity": "http://webdriveruniversity.com/"
+    },
+    "projectId": "jrub9e"
+  }
+  
