@@ -1,6 +1,6 @@
 describe("Tables",()=>
 {
-    //usar datos mockados del arhivo example.json
+    /*//usar datos mockados del arhivo example.json
     beforeEach(() => {
         cy.fixture("example").then((data)=>{
             globalThis.data = data
@@ -10,7 +10,7 @@ describe("Tables",()=>
     })
     it('Calculate total age', () => {
         cy.get('[name="first_name"]').type(data.first_name);    
-    })
+    })*/
 
 
 })

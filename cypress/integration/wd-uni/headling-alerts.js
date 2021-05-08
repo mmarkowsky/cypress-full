@@ -1,6 +1,6 @@
 describe("Feature contact us",()=>
 {
-    it('alert', () => {
+ /*   it('alert', () => {
         cy.visit("http://webdriveruniversity.com/");
         cy.get("#popup-alerts").invoke("removeAttr","target").click({force :true})
         cy.get("#button1").click()
@@ -42,6 +42,6 @@ describe("Feature contact us",()=>
             }).then(() => {
                 cy.get("#confirm-alert-text").contains("You pressed Cancel!")
             })
-    })
+    })*/
 
 })
