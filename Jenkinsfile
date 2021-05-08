@@ -15,4 +15,5 @@ pipeline {
                 echo "Testing finish"
             }
         }
+    }
 }
